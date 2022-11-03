@@ -85,7 +85,7 @@
 // fs.unlinkSync(`${dirpath}/inter.txt`);
 
 
-// ASYCRONOUS BASIC IN NODE JS ============================================================================
+// ASYCRONOUS BASIC IN NODE JS ==========================================================================
 // JAVASCRIPT AND NODE JS IS ASCNCRONOUS.
 // AASCRONOUS IS FAST BEACAUSE ITS NOT WAIT FOR COMPLETE ThE TASK.
 
@@ -104,4 +104,22 @@
 // console.log(a+b);
 
 
+// HANDLE ASYNCRONOUS DATA IN NODE JS======================================================================
+//   let a=20;
+//   let b=0;
+
+//   let wiatingData=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve(30)
+
+//     },2000)
+//   })
+
+//   wiatingData.then((data)=>{
+//     b=data;
+//     console.log(a+b);
+//   })
+
+
+// HOW NODE JS WORK======================================================================================
 
