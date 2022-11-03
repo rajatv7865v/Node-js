@@ -67,4 +67,41 @@
 //  })
 
 
-//
+//CRUD (CREATE READ UPDATE DELETE) OPERATIO WITH FILE SYSTEM ===========================================
+// const fs=require('fs');
+// const path=require('path');
+// const dirpath=path.join(__dirname,'crud');
+// const filepath=`${dirpath}/income.txt`
+// fs.writeFileSync(filepath,"this is a file for testing");
+// fs.readFile(filepath,'utf-8',(err,item)=>{
+//    console.log(item);
+// })
+// fs.appendFile(filepath,"this file is using for append file",(err)=>{
+//     if(!err) console.log("Succesfully")
+// })
+// fs.rename(filepath,`${dirpath}/inter.txt`,(err)=>{
+//     if(!err) console.log("successfully")
+// })
+// fs.unlinkSync(`${dirpath}/inter.txt`);
+
+
+// ASYCRONOUS BASIC IN NODE JS ============================================================================
+// JAVASCRIPT AND NODE JS IS ASCNCRONOUS.
+// AASCRONOUS IS FAST BEACAUSE ITS NOT WAIT FOR COMPLETE ThE TASK.
+
+// console.log("start");
+// setTimeout(()=>{
+//     console.log("Process");
+// },2000)
+// console.log("end");
+
+// let a=10;
+// let b=0;
+// setTimeout(()=>{
+//     b=20;
+// },2000)
+
+// console.log(a+b);
+
+
+
