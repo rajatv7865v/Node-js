@@ -14,7 +14,7 @@
 // console.warn("Try Nodemon start with update ");
 
 
-// CREATE BASIC API=====================================================================================
+// CREATE BASIC API====================================================================================
 // const api=require('./api')
 // const http=require('http');
 // http.createServer((req,resp)=>{
@@ -122,4 +122,83 @@
 
 
 // HOW NODE JS WORK======================================================================================
+ 
+
+//EXPRESS JS INTRODUCTION ==============================================================================
+// it is a framework of node js 
+
+// const express=require('express');
+// const app=express();
+
+// app.get('',(req,resp)=>{
+//  resp.send("Hii this is Home Page")
+// })
+
+// app.get('/about',(req,resp)=>{
+//     resp.send("Hello his is about page")
+// })
+
+// app.listen(4000)
+
+
+// Routing Params (Requesting & Response)===================================
+
+// const express=require('express');
+// const app=express();
+
+// app.get('',(req,resp)=>{
+//     resp.send("Hello this a used respnse"+req.query.name);
+//     console.log("Request is===>",req.query)
+// })
+// app.listen(5000);
+
+// Render HTML & JSON==============================================================
+
+// const express=require('express');
+// const app=express();
+// app.get('',(req,resp)=>{
+//     resp.send(
+//         `<h1>This is a form</h1>
+//         <input type='text'> Helo </input>
+//         <a href='/help'>Help</a>`
+//     )
+// })
+// app.get('/help',(req,resp)=>{
+//     resp.send([
+//         {
+//             name:"rajat",
+//             class:"BCA",
+//             sallery:'40LPA'
+//         },
+//         {
+//             name:"raj",
+//             class:"BCA",
+//             sallery:'40LPA'
+//         },
+//     ])
+// })
+// app.listen(5000)
+
+
+// Make HTML Pages==============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
