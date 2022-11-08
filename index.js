@@ -171,25 +171,123 @@
 //             sallery:'40LPA'
 //         },
 //         {
-//             name:"raj",
-//             class:"BCA",
+//             name:"sumit",
+//             class:"BA",
 //             sallery:'40LPA'
 //         },
 //     ])
-// })
+// }) 
 // app.listen(5000)
+
+
 
 
 // Make HTML Pages==============================================================
 
+// const express =require('express');
+// const path=require('path');
+
+// const app=express();
+// const publicPath=path.join(__dirname,'public');
+
+// app.use(express.static(publicPath))
+// app.use(express.static(publicPath))
 
 
+// app.listen(5000);
 
 
+// REMOVE EXTENSION FROM URL======================================================
+
+// const express=require('express');
+// const path=require('path');
+// const app=express();
+
+// const publicPath=path.join(__dirname,'public');
+
+// app.use(express.static(publicPath));
+
+// app.get('/',(req,resp)=>{
+//     resp.sendFile(`${publicPath}/index.html`)
 
 
+// })
+// app.get('/home',(req,resp)=>{
+//     resp.sendFile(`${publicPath}/about.html`)
+// })
+// app.get('*',(req,resp)=>{
+//     resp.send("404 ! Pae not found")
+// })
+// app.listen(5000)
 
 
+// TEMPLATE ENGINE====================================================================
+
+// const express=require('express');
+// const app = express();
+
+// app.set('view engine',"ejs");
+
+// app.get('/profile',(req,resp)=>{
+//     const user={
+//         name:'rajat',
+//         email:"rajatv785v@gmail.com"
+//     }
+//     resp.render('profile',{user})
+// })
+// app.listen(4000);
+
+
+// DYNAMIC PAGE WITH EJS=================================================
+
+// const express=require('express');
+// const app=express();
+// app.set('view engine','ejs');
+
+// app.get('/profile',(req,resp)=>{
+//     const user={
+//         name:'rajat',
+//         email:'Rajatv785v@gmail.com',
+//         add:'khutar',
+//         distt:'spn',
+//         state:'up',
+//         // skills:['php','java','js','python']
+//     }
+//     resp.render('profile',{user})
+// })
+// app.listen(5000)
+
+
+// EXPRESS JS MIDDLEWARE================================================
+
+// const express=require('express');
+// const app=express();
+
+
+// const appFilter=(req,resp,next)=>{
+// if(!req.query.age){
+//     resp.send("Plese enter age")
+// }
+// else if(req.query.age<18){
+//     resp.send("Chote ho abhi")
+// }
+// else{
+//     next();
+// }
+// }
+// app.use(appFilter)
+
+// app.get('/',(req,resp)=>{
+//     resp.send("This is a home page")
+// })
+// app.get('/about',(req,resp)=>{
+//     resp.send("This is a about page")
+// })
+// app.get('/contct',(req,resp)=>{
+//     resp.send("This is a contact page")
+// })
+  
+// app.listen(4000)
 
 
 
