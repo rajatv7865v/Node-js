@@ -291,6 +291,70 @@
 
 
 
+// ROUTE LEVEL MIDDLEWARE========================================================================
+const express=require('express');
+const app=express();
+
+//Using middleware storing a file middleware.js 
+// const appFilter=require('./middleware')
+// const route=express.Router()
+// // app.use(appFilter)
+
+// app.get('',(req,resp)=>{
+//     resp.send("this is a home page")
+// })
+// route.get('/about',(req,resp)=>{
+//     resp.send("this is a About page")
+// })
+// route.get('/contact',(req,resp)=>{
+//     resp.send("this is a contact page")
+// })
+// app.get('/skills',(req,resp)=>{
+//     resp.send("this is a skills page")
+// })
+// app.use('/',route);
+// app.listen(4000);
+
+
+
+// INSTALL MONGO-DB===============================================================================
+
+
+//CONNNECT MONGO DB WITH NODE JS============================================================
+
+//install npm package of mongo db
+
+//  const {MongoClient} =require('mongodb');
+
+// const url='mongodb://localhost:27017';
+
+// const database='e-comm'
+
+// const client=new MongoClient(url);
+
+// async function  getData(){
+//     let result=await client.connect();
+//     let db= result.db(database)
+//     let Collection = db.collection('products');
+//     let response = await Collection.find({}).toArray()
+//     console.log(response);
+
+// }
+// getData();
+
+
+
+// READ DATA FROM MONGO DB==========================================================================
+
+
+
+
+
+
+
+
+
+
 
 
 
